@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tiktok</item>
+        <item name="colorPrimaryDark">@color/tiktok</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Text" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tiktok</item>
+        <item name="colorPrimaryDark">@color/tiktok</item>
+        <item name="colorAccent">@color/tiktok</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+
+    <style name="Pro" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/tiktok</item>
+    </style>
+
+    <style name="AppThemesss" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/tiktok</item>
+        <item name="colorPrimaryDark">@color/tiktok</item>
+        <item name="colorAccent">@color/tiktok</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Screen" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/splashbackground</item>
+
+    </style>
+</resources>

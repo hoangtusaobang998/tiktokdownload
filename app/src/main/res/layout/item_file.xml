@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grond"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_a"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/row"
+                android:id="@+id/anim_iv_audio"
+                android:layout_width="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/row"
+                app:layout_constraintTop_toTopOf="@+id/row"
+                app:lottie_autoPlay="true"
+                app:lottie_colorFilter="@color/tiktok"
+                app:lottie_fileName="audioplay.json"
+                app:lottie_loop="true"
+                tools:layout_editor_absoluteX="320dp" />
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/music"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato"
+                android:lines="1"
+                android:text="Bài ca thương nhớ"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/lato"
+                android:text="20/12/2020"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_size"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/lato"
+                android:text="5Mb"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/lato"
+                android:text="00:00"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_size"
+                app:layout_constraintStart_toEndOf="@+id/tv_size"
+                app:layout_constraintTop_toTopOf="@+id/tv_size"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:text="MP3"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginStart="32dp"
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/tiktok"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_duration"
+                app:layout_constraintStart_toEndOf="@+id/tv_duration"
+                app:layout_constraintTop_toTopOf="@+id/tv_duration" />
+
+            <ImageView
+                android:id="@+id/row"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_play_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_b"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ring"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shape_tiktok_a"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_audiotrack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/alarm"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shape_tiktok_a"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_notifications"
+                app:layout_constraintEnd_toStartOf="@+id/share"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/alarm"
+                app:layout_constraintTop_toTopOf="@+id/alarm" />
+
+            <ImageView
+                android:id="@+id/alarm"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shape_tiktok_a"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_access_alarm"
+                app:layout_constraintBottom_toBottomOf="@+id/ring"
+                app:layout_constraintEnd_toStartOf="@+id/notification"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ring"
+                app:layout_constraintTop_toTopOf="@+id/ring" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shape_tiktok_a"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_share_"
+                app:layout_constraintBottom_toBottomOf="@+id/notification"
+                app:layout_constraintEnd_toStartOf="@+id/delete"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/notification"
+                app:layout_constraintTop_toTopOf="@+id/notification" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shape_tiktok_a"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/share"
+                app:layout_constraintTop_toTopOf="@+id/share" />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/lato"
+                android:text="@string/caichuong"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintEnd_toEndOf="@+id/ring"
+                app:layout_constraintStart_toStartOf="@+id/ring"
+                app:layout_constraintTop_toBottomOf="@+id/ring" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/lato"
+                android:text="@string/baothuc"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintEnd_toEndOf="@+id/alarm"
+                app:layout_constraintStart_toStartOf="@+id/alarm"
+                app:layout_constraintTop_toBottomOf="@+id/alarm" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/lato"
+                android:text="@string/xoa"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintEnd_toEndOf="@+id/delete"
+                app:layout_constraintStart_toStartOf="@+id/delete"
+                app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/lato"
+                android:text="@string/chiase"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintEnd_toEndOf="@+id/share"
+                app:layout_constraintStart_toStartOf="@+id/share"
+                app:layout_constraintTop_toBottomOf="@+id/share" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/lato"
+                android:text="@string/thongbao"
+                android:textColor="@color/tiktok"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintEnd_toEndOf="@+id/notification"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/notification"
+                app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

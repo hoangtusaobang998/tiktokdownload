@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SFL Download TikTok</string>
+    <string name="download">Tải về \n \u25CF</string>
+    <string name="trangchu">Trang chủ \n \u25CF</string>
+    <string name="url_tiktok">\u2713 Dán Liên kết video TikTok tại đây</string>
+    <string name="download_audio">Tải về</string>
+    <string name="url_isempty">Vui lòng điền link tiktok?</string>
+    <string name="loading">Đang tải xuống \n \u25CF</string>
+    <string name="no_internet">Không có kết nối</string>
+    <string name="thulai">Có lỗi rồi,thử lại nhé !</string>
+    <string name="tontai">File đã tồn tại</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="noapp">Tiktok không có trong danh sách ứng dụng</string>
+    <string name="nolinks">Không phải đường dẫn Tiktok</string>
+    <string name="caichuong">Cài chuông</string>
+    <string name="baothuc">Báo thức</string>
+    <string name="thongbao">Thông báo</string>
+    <string name="chiase">Chia sẻ</string>
+    <string name="xoa">Xóa</string>
+    <string name="setlive">Cài live</string>
+    <string name="double_click">Nhấn 2 lần dừng video</string>
+    <string name="volume">Âm lượng</string>
+    <string name="thanhcong">Cài thành công</string>
+    <string name="delete_s">Xóa thành công</string>
+    <string name="rate">Đánh giá</string>
+    <string name="like">Bạn có yêu thích ứng dụng?</string>
+    <string name="intro">Giới thiệu</string>
+    <string name="sfl_intro"><![CDATA[SFL Download Video không logo & Audio từ mạng xã hội TikTok hoàn toàn miễn phí.Sau khi tải video về bạn có thể xem hoặc cài làm hình nền live cho điện thoại thêm hấp dẫn,audio bạn có thể cài nhạc chuông,báo thức,thông báo,…và chia sẻ cho bạn bè,…]]></string>
+    <string name="dong">Đóng</string>
+    <string name="ads">Cảm ơn</string>
+    <string name="sfl_ads">SFL Xin lỗi vì quảng cáo.Quảng cáo giúp SFL tiếp tục phát triển và mang đến những trải nghiệm miễn phí cho bạn. \n Cảm ơn bạn rất nhiều!</string>
+    <string name="dongy">Đồng ý</string>
+
+    <string name="app_id">ca-app-pub-9820403728969062~4553834162</string>
+    <string name="banner_id">ca-app-pub-9820403728969062/3822017054</string>
+    <string name="inter_id">ca-app-pub-9820403728969062/8425630567</string>
+</resources>

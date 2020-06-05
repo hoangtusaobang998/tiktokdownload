@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name"> SFL Download TikTok </string>
+        
+    <string name="download"> Download \n \u25CF </string>
+        
+    <string name="trangchu"> Homepage \n \u25CF </string>
+        
+    <string name="url_tiktok"> \u2713 Paste TikTok Video Link here </string>
+        
+    <string name="download_audio"> Download </string>
+        
+    <string name="url_isempty"> Please enter the link tiktok? </string>
+        
+    <string name="loading"> Downloading \n \u25CF </string>
+        
+    <string name="no_internet"> No connection </string>
+        
+    <string name="thulai"> An error occurred, try again! </string>
+        
+    <string name="tontai"> File already exists </string>
+        
+    <string name="video"> Video </string>
+        
+    <string name="audio"> Audio </string>
+        
+    <string name="noapp"> Tiktok is not in the application list </string>
+        
+    <string name="nolinks"> Not the Tiktok path </string>
+        
+    <string name="caichuong"> Set a bell </string>
+        
+    <string name="baothuc"> Alarm </string>
+        
+    <string name="thongbao"> Notice </string>
+        
+    <string name="chiase"> Share </string>
+        
+    <string name="xoa"> Delete </string>
+        
+    <string name="setlive"> Set live </string>
+        
+    <string name="double_click"> Press and pause video twice </string>
+        
+    <string name="volume"> Volume </string>
+        
+    <string name="thanhcong"> Successfully installed </string>
+        
+    <string name="delete_s"> Successfully deleted </string>
+        
+    <string name="rate"> Rating </string>
+        
+    <string name="like"> Do you love the application? </string>
+        
+    <string name="intro"> Introduction </string>
+        
+    <string name="sfl_intro"><![CDATA[SFL Download Video without logo & Audio from TikTok social network is completely free. After downloading videos, you can watch or set as live wallpapers for your phone more attractive, audio, you can set ringtones, alarms, notify, … and share with friends, …]]></string>
+     
+    <string name="dong"> Close </string>
+        
+    <string name="ads"> Thanks </string>
+        
+    <string name="sfl_ads"> SFL Sorry for advertising. Ads help SFL keep growing and bring you a free experience. \n Thank you very much! </string>
+        
+    <string name="dongy"> Agree </string>
+
+    <string name="app_id">ca-app-pub-9820403728969062~4553834162</string>
+    <string name="banner_id">ca-app-pub-9820403728969062/3822017054</string>
+    <string name="inter_id">ca-app-pub-9820403728969062/8425630567</string>
+</resources>
